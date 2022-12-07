@@ -2234,11 +2234,11 @@ struct SpellEntry
 };
 
 // SpellMisc.dbc
-struct SpellMiscEntry
+sstruct SpellMiscEntry
 {
     uint32    Id;                                           // 0        m_ID
-    //uint32  SpellId                                       // 1
-    //uint32  Unk                                           // 2
+    uint32    SpellId;                                      // 1        m_spellId
+    //uint32 m_difficultyID;                                // 2        5.0.1.15589
     uint32    Attributes;                                   // 3        m_attribute
     uint32    AttributesEx;                                 // 4        m_attributesEx
     uint32    AttributesEx2;                                // 5        m_attributesExB
@@ -2246,13 +2246,13 @@ struct SpellMiscEntry
     uint32    AttributesEx4;                                // 7        m_attributesExD
     uint32    AttributesEx5;                                // 8        m_attributesExE
     uint32    AttributesEx6;                                // 9        m_attributesExF
-    uint32    AttributesEx7;                                // 10       m_attributesExG
+    uint32    AttributesEx7;                                // 10       m_attributesExG (0x20 - totems, 0x4 - paladin auras, etc...)
     uint32    AttributesEx8;                                // 11       m_attributesExH
     uint32    AttributesEx9;                                // 12       m_attributesExI
     uint32    AttributesEx10;                               // 13       m_attributesExJ
     uint32    AttributesEx11;                               // 14       m_attributesExK
     uint32    AttributesEx12;                               // 15       m_attributesExL
-    uint32    AttributesEx13;                               // 16       m_attributesExM
+    uint32    AttributesEx13;                               // 16       m_attributesExL
     uint32    CastingTimeIndex;                             // 17       m_castingTimeIndex
     uint32    DurationIndex;                                // 18       m_durationIndex
     uint32    rangeIndex;                                   // 19       m_rangeIndex
